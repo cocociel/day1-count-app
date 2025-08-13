@@ -1,14 +1,14 @@
 // 名前を入力
 interface NameInputProps {
   id: string;
-  name: string;
+  value: string;
   onChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
 }
 
-export default function NameInput({ id, name, onChange }: NameInputProps) {
+export default function NameInput({ id, value, onChange }: NameInputProps) {
   return (
     <>
-      <div className="flex item-center gap-2">
+      <div className="flex items-center gap-2">
         <label
           htmlFor={id}
           className="text-red-400 text-2xl"
@@ -18,7 +18,7 @@ export default function NameInput({ id, name, onChange }: NameInputProps) {
         <input
           id={id}
           type="text"
-          value={name}
+          value={value}
           placeholder="ユーザー名を入力"
           maxLength={16}
           onChange={onChange}

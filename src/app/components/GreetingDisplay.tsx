@@ -1,16 +1,16 @@
 // ユーザ名表示
 
 interface GreetingDisplayProps {
-  name: string | null;
+  value: string;
 }
 
-export default function GreetingDisplay({ name }: GreetingDisplayProps) {
+export default function GreetingDisplay({ value }: GreetingDisplayProps) {
   return (
     <>
       <p
         className="text-red-400 text-2xl "
       >
-        こんにちは、{name || "ゲスト"}さん</p>
+        こんにちは、{value || "ゲスト"}さん</p>
     </>
   );
 }

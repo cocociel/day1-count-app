@@ -22,8 +22,8 @@ export default function Home() {
 
         {/* 中身を縦方向に並べる */}
         <div className="flex flex-col items-center gap-4 bg-white p-4 rounded-xl">
-          <GreetingDisplay name={name} />
-          <NameInput id='userName' name={name} onChange={onChange} />
+          <GreetingDisplay value={name} />
+          <NameInput id='userName' value={name} onChange={onChange} />
           <LikeButton count={count} onClick={onClick} />
         </div>
       </div>
