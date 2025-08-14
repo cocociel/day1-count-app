@@ -8,10 +8,10 @@ export default function LikeButton({ count, onClick }: LikeButtonProps) {
   return (
     <>
       <button
-        className="inline-block text-red-400 text-center text-2xl rounded-2xl border-2 border-dashed border-red-400 p-2 w-24"
+        className="inline-block text-right text-red-500 text-2xl rounded-2xl border-2 border-solid border-red-300 p-2 w-auto"
         onClick={onClick}
       >
-        ♡ {count}
+        {count} | ♥
       </button>
 
     </>
