@@ -22,9 +22,11 @@ export default function Input({ id, minLength, maxLength, flgReadOnly, flgRequir
       required={flgRequired}
       placeholder={placeHolder}
       style={style}
+      value="あいうえおかきくけこさし"
 
       className="text-xl text-gray-800 outline-none"
     >
+
     </input>
   );
 }
